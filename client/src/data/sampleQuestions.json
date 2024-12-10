@@ -1,0 +1,62 @@
+[
+  {
+    "title": "What is the difference between React and Angular?",
+    "description": "I want to understand the key differences between React and Angular frameworks.",
+    "tags": ["React", "Angular", "Frontend"],
+    "author": "6489b1a1f0a1b0a3c1d2e3f4"
+  },
+  {
+    "title": "How does Node.js handle asynchronous operations?",
+    "description": "Can someone explain how Node.js manages async tasks using event loops?",
+    "tags": ["Node.js", "Asynchronous", "Event Loop"],
+    "author": "6489b1a1f0a1b0a3c1d2e3f5"
+  },
+  {
+    "title": "Best practices for MongoDB schema design?",
+    "description": "What are the recommended practices for designing a MongoDB schema?",
+    "tags": ["MongoDB", "Database Design", "Best Practices"],
+    "author": "6489b1a1f0a1b0a3c1d2e3f6"
+  },
+  {
+    "title": "What are JWT tokens and how do they work?",
+    "description": "I would like to know how JWT tokens are generated and used in authentication.",
+    "tags": ["JWT", "Authentication", "Security"],
+    "author": "6489b1a1f0a1b0a3c1d2e3f7"
+  },
+  {
+    "title": "How can I improve performance in a React app?",
+    "description": "What are some techniques to optimize a React application's performance?",
+    "tags": ["React", "Performance", "Optimization"],
+    "author": "6489b1a1f0a1b0a3c1d2e3f8"
+  },
+  {
+    "title": "What is the use of middleware in Express.js?",
+    "description": "Could someone explain the role of middleware in an Express.js application?",
+    "tags": ["Express.js", "Middleware", "Backend"],
+    "author": "6489b1a1f0a1b0a3c1d2e3f9"
+  },
+  {
+    "title": "How does Context API compare to Redux?",
+    "description": "Which one should I use for state management in a React application?",
+    "tags": ["Context API", "Redux", "State Management"],
+    "author": "6489b1a1f0a1b0a3c1d2e3f0"
+  },
+  {
+    "title": "What are the key features of TypeScript?",
+    "description": "Can someone outline the main benefits and features of TypeScript?",
+    "tags": ["TypeScript", "JavaScript", "Frontend"],
+    "author": "6489b1a1f0a1b0a3c1d2e3f1"
+  },
+  {
+    "title": "How does MongoDB handle indexing?",
+    "description": "I want to understand how indexing works in MongoDB and when to use it.",
+    "tags": ["MongoDB", "Indexing", "Performance"],
+    "author": "6489b1a1f0a1b0a3c1d2e3f2"
+  },
+  {
+    "title": "What is the role of hooks in React?",
+    "description": "How do React hooks simplify state management and side effects?",
+    "tags": ["React", "Hooks", "State Management"],
+    "author": "6489b1a1f0a1b0a3c1d2e3f3"
+  }
+]
