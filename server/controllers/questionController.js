@@ -26,6 +26,8 @@ exports.getQuestions = async (req, res) => {
   }
 };
 
+
+//below function needs to be called when a question is accessed
 exports.incrementView = async (req, res) => {
   try {
     const { questionId } = req.params;
@@ -42,6 +44,8 @@ exports.incrementView = async (req, res) => {
   }
 };
 
+
+//below function will be called when adding an answer to a question
 exports.updateAnswerCount = async (questionId) => {
   try {
     const count = await Answer.countDocuments({ questionId });
@@ -50,3 +54,56 @@ exports.updateAnswerCount = async (questionId) => {
     console.error("Failed to update answer count:", error);
   }
 };
+
+exports.paginateQuestions = async (req, res) => {
+  try {
+    const { page = 1, limit = 10, tags, query } = req.query;
+
+    let filter = {};
+    if (tags) filter.tags = { $in: tags.split(',') };
+    if (query) filter.$text = { $search: query };
+
+    const questions = await Question.find(filter)
+      .sort({ createdAt: -1 }) // Sort by latest
+      .skip((page - 1) * limit)
+      .limit(parseInt(limit))
+      .populate('author', 'name');
+
+    const totalCount = await Question.countDocuments(filter);
+
+    res.json({
+      questions,
+      totalPages: Math.ceil(totalCount / limit),
+      currentPage: parseInt(page),
+    });
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to fetch questions' });
+  }
+};
+
+exports.searchFilterPaginateQuestions = async (req, res) => {
+  try {
+    const { page = 1, limit = 10, tags, query } = req.query;
+
+    let filter = {};
+    if (tags) filter.tags = { $in: tags.split(',') };
+    if (query) filter.$text = { $search: query };
+
+    const questions = await Question.find(filter)
+      .sort({ createdAt: -1 })
+      .skip((page - 1) * limit)
+      .limit(parseInt(limit))
+      .populate('author', 'name');
+
+    const totalCount = await Question.countDocuments(filter);
+
+    res.json({
+      questions,
+      totalPages: Math.ceil(totalCount / limit),
+      currentPage: parseInt(page),
+    });
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to fetch questions' });
+  }
+};
+
