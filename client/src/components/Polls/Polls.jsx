@@ -1,8 +1,12 @@
 import React from 'react'
+import PollQuestion from './../../data/samplePollQuestions.json'
+import PollCard from './PollCard'
 
 const Polls = () => {
   return (
-    <div>Polls</div>
+    <div className='flex flex-col'>
+      {PollQuestion.map(poll => <PollCard poll={poll} />)}
+    </div>
   )
 }
 

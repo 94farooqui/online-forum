@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "question": "What is your favorite programming language?",
+    "options": [
+      { "id": 1, "text": "JavaScript" },
+      { "id": 2, "text": "Python" },
+      { "id": 3, "text": "Java" },
+      { "id": 4, "text": "C++" }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Which web framework do you prefer?",
+    "options": [
+      { "id": 1, "text": "React" },
+      { "id": 2, "text": "Angular" },
+      { "id": 3, "text": "Vue" },
+      { "id": 4, "text": "Svelte" }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "What is your preferred development environment?",
+    "options": [
+      { "id": 1, "text": "Visual Studio Code" },
+      { "id": 2, "text": "IntelliJ IDEA" },
+      { "id": 3, "text": "Atom" },
+      { "id": 4, "text": "Sublime Text" }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Which cloud platform do you use most often?",
+    "options": [
+      { "id": 1, "text": "AWS" },
+      { "id": 2, "text": "Google Cloud" },
+      { "id": 3, "text": "Azure" },
+      { "id": 4, "text": "DigitalOcean" }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "What is your favorite version control system?",
+    "options": [
+      { "id": 1, "text": "Git" },
+      { "id": 2, "text": "Subversion (SVN)" },
+      { "id": 3, "text": "Mercurial" },
+      { "id": 4, "text": "Perforce" }
+    ]
+  }
+]
